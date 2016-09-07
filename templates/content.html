@@ -1,0 +1,13 @@
+{{define "content"}}
+    <h2>THIS IS THE BODY CONTENT</h2>
+    <ul>
+        {{.}}
+        {{range .}}
+        <ul>
+           {{range .IData}}
+           <li>{{.Name}}</li>
+           {{end}}
+        </ul>
+        {{end}}
+    </ul>
+{{end}}
